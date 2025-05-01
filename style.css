@@ -195,8 +195,9 @@ nav a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    filter: brightness(1.1) contrast(0.9) saturate(1.1) blur(1px);
+    filter: brightness(1.05) saturate(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateZ(0); /* Hardware acceleration */
 }
 
 .hero-ctas {
@@ -704,8 +705,7 @@ footer .container {
     }
 
     .hero-image img {
-         border-radius: 8px; 
-         box-shadow: 0 8px 15px rgba(0,0,0,0.1); 
+        border-radius: 8px; 
     }
 
     .hero-ctas {
