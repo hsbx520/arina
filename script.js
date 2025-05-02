@@ -294,11 +294,3 @@ document.addEventListener('DOMContentLoaded', () => {
      // Re-add event listeners for the social buttons (already covered by generic btn class but good practice)
      // No specific JS needed for simple links unless custom tracking or effects are required.
 });
-
-// Insert progress bar HTML into the page
-const progressBarHtml = `
-    <div class="progress-bar" style="width: 93.8%"> 
-        <span class="progress-text">1,875.92 SOL</span>
-    </div>
-`;
-document.body.insertAdjacentHTML('beforeend', progressBarHtml);
