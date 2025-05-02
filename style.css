@@ -693,8 +693,7 @@ footer .container {
     }
 
     header .container {
-         gap: 5px; 
-         flex-wrap: wrap;
+         gap: 10px; 
     }
 
     .logo img {
@@ -702,13 +701,13 @@ footer .container {
     }
 
     nav ul {
-        gap: 10px; 
-        justify-content: space-between; 
-        width: 100%;
+        gap: 15px; 
+        justify-content: flex-end; 
+        flex-wrap: wrap; 
     }
 
     nav a {
-        font-size: 0.8em; 
+        font-size: 0.95em; 
         padding: 5px 0; 
     }
 
@@ -730,12 +729,13 @@ footer .container {
     }
 
     .hero-content h1 {
-        font-size: 2.5em; 
-        line-height: 1.1;
+        font-size: 2.8em; 
+        margin-bottom: 10px;
     }
 
     .hero-content p {
         font-size: 1.1em; 
+        line-height: 1.5;
     }
 
     .hero-image img {
@@ -753,7 +753,7 @@ footer .container {
     }
 
     .section {
-        padding: 50px 0; 
+        padding: 60px 0; 
     }
 
     .section h2 {
@@ -837,8 +837,20 @@ footer .container {
     }
 
     .wallet-address-box {
-        font-size: 0.85em;
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; 
+        font-size: 0.95em; 
+        padding: 10px 15px;
+        text-align: center; 
+    }
+
+    .wallet-address-box span#wallet-address {
+        padding-right: 0;
+        text-align: center;
+        word-break: break-all;
+        width: 100%;
+        font-size: 0.9em; 
     }
 
     .copy-btn {
@@ -880,13 +892,22 @@ footer .container {
 
      /* --- Community Section - Social Links  --- */
      .social-buttons {
-        gap: 8px;
+        flex-direction: column;
+        gap: 10px; 
+        margin-top: 15px;
+        max-width: 100%;
     }
 
     .social-buttons .social-btn {
-        padding: 10px 15px;
-        font-size: 0.85em;
-        justify-content: flex-start;
+        width: 100%;
+        min-width: auto;
+        padding: 10px 20px;
+        font-size: 0.95em; 
+    }
+
+    .social-buttons .social-btn i {
+         margin-right: 8px; 
+         font-size: 1.1em; 
     }
 
     /* --- Token Info, Allocation, Roadmap --- */
@@ -906,7 +927,7 @@ footer .container {
 
     .token-info-details .detail-item h3,
     .roadmap-details h3 {
-        font-size: 1em; 
+        font-size: 1.05em; 
         margin-bottom: 6px; 
     }
 
@@ -935,7 +956,7 @@ footer .container {
     }
 
     .roadmap-details h3 {
-        font-size: 1em; 
+        font-size: 1.1em; 
         margin-top: 20px; 
         margin-bottom: 8px;
         padding-bottom: 5px;
@@ -945,23 +966,6 @@ footer .container {
         margin-top: 0;
     }
 
-    .progress-container {
-        height: 20px;
-    }
-
-    .progress-text {
-        font-size: 0.7em;
-        right: 5px;
-    }
-
-    .roadmap-details h3 {
-        font-size: 1em;
-    }
-
-    .roadmap-details li {
-        font-size: 0.9em;
-        line-height: 1.5;
-    }
 
     /* Image Section Styling */
     .image-section {
@@ -986,18 +990,20 @@ footer .container {
     }
 }
 
+@media (max-width: 1300px) {
+    .decorative-image {
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
     /* Extra small screen adjustments */
-    .section {
-        padding: 40px 15px;
-    }
-
     .section h2 {
         font-size: 1.8em; 
     }
 
     .hero-content h1 {
-        font-size: 2em;
+        font-size: 2.4em; 
     }
 
      .hero-content p {
@@ -1005,7 +1011,7 @@ footer .container {
      }
 
      .section .subtitle {
-         font-size: 0.9em;
+         font-size: 0.95em;
      }
 
      .wallet-address-box span#wallet-address {
@@ -1017,32 +1023,20 @@ footer .container {
          font-size: 0.8em; 
      }
 
-     .hero-ctas, .buy-sol-ctas {
-        flex-direction: column;
-        gap: 10px;
-    }
+     .social-buttons .social-btn {
+         font-size: 0.9em; 
+         padding: 8px 15px; 
+     }
 
-    .social-buttons {
-        gap: 8px;
-    }
+     .sol-raised {
+         font-size: 1.2em; 
+     }
 
-    .social-buttons .social-btn {
-        padding: 10px 15px;
-        font-size: 0.85em;
-        justify-content: flex-start;
-    }
+     .buy-sol-ctas .btn {
+         font-size: 0.9em; 
+     }
 
-    .social-buttons .social-btn {
-        min-width: 100%;
-    }
-
-    footer {
+      footer {
          font-size: 0.8em; 
      }
-}
-
-@media (max-width: 1300px) {
-    .decorative-image {
-        display: none;
-    }
 }
