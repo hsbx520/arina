@@ -409,17 +409,17 @@ nav a:hover {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-.progress-labels {
+.presale-progress-labels {
     display: flex;
     justify-content: space-between;
-    margin-size: 0.9em;
-    margin-top: 0px;
+    margin-top: 5px;
+    font-size: 0.95em;
     line-height: 1.2;
 }
 
 .current-raised {
-    color: var(--accent-gold);
-    font-weight: bolder;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 .target-amount {
