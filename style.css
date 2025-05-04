@@ -677,6 +677,29 @@ footer .container {
     filter: brightness(1.05) contrast(0.95) saturate(1.05);
 }
 
+/* --- Highlight Note --- */
+.highlight-note {
+    display: block;
+    background-color: rgba(242, 235, 247, 0.5);
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1em;
+    color: var(--neutral-dark);
+    line-height: 1.6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    text-webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.highlight-note strong {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-family: var(--font-button);
+    letter-spacing: 0.5px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
