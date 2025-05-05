@@ -207,6 +207,24 @@ nav a:hover {
     justify-content: center;
 }
 
+#countdown-timer {
+    margin-top: 10px;
+    font-family: var(--font-button);
+    font-size: 1em;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+#countdown-timer span {
+    font-weight: 700;
+    background-color: rgba(200, 180, 210, 0.2);
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
 /* --- About Section --- */
 #about .container {
     text-align: center;
