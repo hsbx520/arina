@@ -164,12 +164,37 @@ function animateParticles() {
     requestAnimationFrame(animateParticles);
 }
 
+// Add countdown timer functionality
+function updateCountdown() {
+    const targetDate = new Date('May 6, 2025 12:00:00 UTC');
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+        document.getElementById('countdown-timer').textContent = "Presale has ended!";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+}
+
 // Initial setup
 resizeCanvas(); // Initial resize and particle initialization
 animateParticles(); // Start the animation loop
 
 // Simple fade-in on load for elements with .fade-in class
 document.addEventListener('DOMContentLoaded', () => {
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => {
         el.style.opacity = 0; // Ensure opacity is 0 initially if not set in CSS
