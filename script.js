@@ -166,7 +166,7 @@ function animateParticles() {
 
 // Add countdown timer functionality
 function updateCountdown() {
-    const targetDate = new Date('May 6, 2025 12:00:00 UTC');
+    const targetDate = new Date('May 6, 2025 15:00:00 UTC');
     const now = new Date();
     const diff = targetDate - now;
 
