@@ -171,7 +171,7 @@ function updateCountdown() {
     const diff = targetDate - now;
 
     if (diff <= 0) {
-        document.getElementById('countdown-timer').textContent = "Presale has ended!";
+        document.getElementById('countdown-timer').textContent = "Presale has officially ended! But if you still send SOL to the presale address before the official contract is published, your contribution will still be counted.We will airdrop your $ARINA tokens directly to the wallet you used to send SOL.";
         return;
     }
 
